@@ -6,6 +6,12 @@ description: "Hello World"
 
 Guadalupe is the best
 
+Two examples - is this LaTeX?
+
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+
 I'm sure I'll write a lot more interesting things in the future.
 
 Oh, and here's a great quote from this Wikipedia on
