@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Guadas World!`,
+    title: `Very PhD`,
     author: {
       name: `Guadalupe Gonzalez`,
-      summary: `who is amazing at all things biotech and machine learning.`,
+      summary: `, to share the research and data analysis she does during her PhD.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A blog sharing my research.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
-      twitter: `guadalupeCielito`,
+      twitter: `guadagonzalezzp`,
     },
   },
   plugins: [
