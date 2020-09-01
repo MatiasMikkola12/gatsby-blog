@@ -58,7 +58,6 @@ Now that we know what fitting a curve means and how to obtain metrics of drug ef
 library(drc)
 library(ggplot2)
 library(magrittr)
-library(synergyfinder)
 library(Cairo)
 
 data_synthetic = data.frame(c(0.1,1,2,3,10), c(0,20,40,60, 80))
@@ -75,7 +74,7 @@ plot(data_synthetic,
 
 ![alt text](images/image_scatter_dose_response.png "Figure scater plot dose-response")
 
-Then we fit the curve using the function *drm* from the *drc* package, and plot the fitted curve:
+Then we fit the curve using the function `drm` from the `drc` package, and plot the fitted curve:
 
 ```
 fitted_curve <- drm(formula = inhibition ~ concentration,
