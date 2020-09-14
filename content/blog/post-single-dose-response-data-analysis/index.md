@@ -100,7 +100,8 @@ rownames(efficacy_metrics) <- c('E0', 'Einf', 'EC50', 'H', 'IC50')
 colnames(efficacy_metrics) <- 'Value'
 efficacy_metrics
 ```
-![alt text](images/efficacy_metrics.png "Figure efficacy metrics")
+
+![lastimage](images/efficacy_metrics.png "Figure efficacy metrics")
 
 <br>
 <br>
