@@ -3,7 +3,8 @@ module.exports = {
     title: `Very PhD`,
     author: {
       name: `Guadalupe Gonzalez`,
-      summary: `, to share the research and data analysis she does during her PhD. To know more about her and the current research projects she's doing, check out her Hello World post. `,
+      summary: `, to share the research and data analysis she does during her PhD. To know more about her and the current research projects she's doing, check out her `,
+      after: ` post.`
     },
     description: `A blog sharing my research.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,

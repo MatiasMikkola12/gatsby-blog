@@ -16,6 +16,7 @@ const BlogIndex = ({ data, location }) => {
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
+        console.log('slug', node.fields.slug);
         return (
           <article key={node.fields.slug}>
             <header>
@@ -24,7 +25,7 @@ const BlogIndex = ({ data, location }) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none`, color: `#ff0081` }} to={node.fields.slug}>
+                <Link style={{ boxShadow: `none`, color: `#fb7bab` }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>

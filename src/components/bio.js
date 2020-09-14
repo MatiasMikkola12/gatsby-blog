@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -26,6 +26,7 @@ const Bio = () => {
           author {
             name
             summary
+            after
           }
           social {
             twitter
@@ -36,7 +37,6 @@ const Bio = () => {
   `)
 
   const { author, social } = data.site.siteMetadata
-  console.log('data', data);
   return (
     <div
       style={{
@@ -59,8 +59,12 @@ const Bio = () => {
       />
       <p>
         Written by <strong>{author.name}</strong> {author.summary}
+        <Link style={{ color: `#fb7bab` }} to="/hello-world/">
+          Hello World
+        </Link>
+        {author.after}
         {` `}
-        <a style={{color: `#ff0081`}} href={`https://twitter.com/${social.twitter}`}>
+        <a style={{ color: `#fb7bab` }} href={`https://twitter.com/${social.twitter}`}>
           You should follow her on Twitter
         </a>
       </p>
