@@ -7,3 +7,9 @@ img[alt="lastimage"] {
     height: 75% !important;
     width: 75% !important;
   }
+
+img[alt="lastimage2"] {
+    display: block;
+    height: 25% !important;
+    width: 25% !important;
+}
