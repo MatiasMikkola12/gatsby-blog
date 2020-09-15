@@ -18,7 +18,7 @@ From this data, several metrics can be extracted to measure drug efficacy:
 - **EC50**: Concentration of a drug at which 50% of its maximal response is induced. EC50 is normally measured in molar concentrations and is used as a measure of agonist drug potency - the lower the EC50 value, the lower the concentration of drug required to elicit a 50% maximal response and the greater the potency of the drug.
 - **IC50**: Concentration of a drug required for 50% inhibition of cell growth (or, more general, inhibition of any chemical function). It is normally measured in molar concentrations and is used as a measure of antagonist drug potency - the lower the IC50 value, the more potent the drug is. 
 
-With the experimental raw data, we only have a discrete view of what the drug response is. However, we need a continuous representation of the drug-response relationship, so we can obtain a full view of the response caused by the drug at any given concentration. To obtain this continuous view, we need to do a 'curve fitting' procedure. Using a curve fitting algorithm, will adjust the parameters of a curve so that the function 'adjusts' or 'fits' to our data as close as possible. With the adjusted curve, we will be able to interpolate and extrapolate response values, hence we will know the response at any given drug concentration.
+With the experimental raw data, we only have a discrete view of what the drug response is. However, we need a continuous representation of the drug-response relationship, so we can obtain a full view of the response caused by the drug at any given concentration. To obtain this continuous view, we need to apply a 'curve fitting' algorithm. A curve fitting algorithm optimizes the parameters of a curve or function so that it 'adjusts' or 'fits' to our data as close as possible. With the adjusted curve, we will be able to interpolate and extrapolate response values, hence we will know the response at any given drug concentration.
 
 A widely-used approach is to fit a 4-parameter logistic curve, defined by the equation:
 
@@ -34,7 +34,7 @@ A curve-fitting algorithm tries to adjust parameters *b*, *c*, *d*, and *e* so t
 
 Now, let's see what the parameters *b*, *c*, *d*, and *e* mean for the curve. 
 
-![alt text](images/image_fitted_dose_response_labels.png "Figure fitted dose-response curve with labels")
+![alt text](images/image_fitted_dose_response_labels_.png "Figure fitted dose-response curve with labels")
 
 Analyzing the curve equation, we see that:
 - *c* is the lowest point of the curve - which corresponds to the response observed in absence of drug (**E0**)
@@ -101,7 +101,7 @@ colnames(efficacy_metrics) <- 'Value'
 efficacy_metrics
 ```
 
-![lastimage](images/efficacy_metrics.png "Figure efficacy metrics")
+![lastimage2](images/efficacy_metrics.png "Figure efficacy metrics")
 
 <br>
 <br>
